@@ -2,6 +2,16 @@
 
 ## From [Stepik](https://stepik.org/course/575/syllabus)
 
+### Initial virtual environment
+
+python -m venv myvenv  
+myvenv\Scripts\activate
+python -m pip install --upgrade pip
+pip install selenium
+pip install pytest
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
 ### Git commands
 
 git init  
@@ -11,7 +21,7 @@ git add file
 git commit -m "описание коммита"  
 git status
 
-### Полезные ссылки
+### Useful links for learning git
 
 [Отличный интерактивный туториал](https://learngitbranching.js.org/)
 
