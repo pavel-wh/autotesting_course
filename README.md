@@ -5,11 +5,11 @@
 ### Initial virtual environment
 
 python -m venv myvenv  
-myvenv\Scripts\activate
-python -m pip install --upgrade pip
-pip install selenium
-pip install pytest
-pip freeze > requirements.txt
+myvenv\Scripts\activate  
+python -m pip install --upgrade pip  
+pip install selenium  
+pip install pytest  
+pip freeze > requirements.txt  
 pip install -r requirements.txt
 
 ### Git commands
