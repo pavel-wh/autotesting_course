@@ -35,3 +35,11 @@ git status
 <http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/ru/index.html>  
 <https://habr.com/company/intel/blog/344962/>  
 <https://githowto.com/ru>
+
+### PyTest fixtures materials
+
+<https://habr.com/ru/company/yandex/blog/242795/>
+
+<https://medium.com/@dmrlx/%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-pytest-cc6175c7d0dc>
+
+<https://docs.pytest.org/en/latest/fixture.html>
