@@ -1,3 +1,4 @@
+import time
 from .base_page import BasePage
 from selenium.webdriver.common.by import By
 from .locators import GoodsPageLocators
@@ -25,3 +26,17 @@ class GoodsPage(BasePage):
         basket_button = self.browser.find_element(
             *GoodsPageLocators.ADD_BASKET_BUTTON)
         basket_button.click()
+
+    def should_be_message_about_goods_name(self):
+        name_goods = self.browser.find_element(
+            *GoodsPageLocators.NAME_GOODS)
+        message_name_goods = self.browser.find_element(
+            *GoodsPageLocators.MESSAGE_NAME_GOODS)
+        assert name_goods.text == message_name_goods.text, "Goods name not match"
+
+    def should_be_message_about_goods_price(self):
+        price_goods = self.browser.find_element(
+            *GoodsPageLocators.PRICE_GOODS)
+        message_price_goods = self.browser.find_element(
+            *GoodsPageLocators.MESSAGE_PRICE_GOODS)
+        assert price_goods.text == message_price_goods.text, "Goods price not match"
