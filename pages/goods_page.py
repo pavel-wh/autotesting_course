@@ -40,3 +40,11 @@ class GoodsPage(BasePage):
         message_price_goods = self.browser.find_element(
             *GoodsPageLocators.MESSAGE_PRICE_GOODS)
         assert price_goods.text == message_price_goods.text, "Goods price not match"
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*GoodsPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but should not be"
+
+    def should_be_success_message_disappear(self):
+        assert self.is_not_element_present(*GoodsPageLocators.SUCCESS_MESSAGE), \
+            "Success message is not disappeared"

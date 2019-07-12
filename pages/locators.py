@@ -18,3 +18,5 @@ class GoodsPageLocators(object):
         By.CSS_SELECTOR, "#messages .alertinner>strong")
     MESSAGE_PRICE_GOODS = (
         By.CSS_SELECTOR, "#messages .alertinner p>strong")
+    SUCCESS_MESSAGE = (
+        By.CSS_SELECTOR, "#messages .alert-success .alertinner")
