@@ -5,7 +5,8 @@ import pytest
 
 """мы можем логически сгруппировать тесты в один класс просто ради более стройного кода: удобно, когда тесты, связанные с одним компонентом лежат в одном классе, а с помощью pytest.mark можно помечать сразу весь класс. Основное правило такое: название класса должно начинаться с Test, чтобы PyTest смог его обнаружить и запустить.
 """
-@pytest.mark.login_guest
+
+
 class TestLoginFromMainPage(object):
     def test_guest_can_go_to_login_page(self, browser):
         link = "http://selenium1py.pythonanywhere.com"
